@@ -9,9 +9,14 @@ const ProductCard = ({ product }) => {
                 </div>
                 <Card.Body>
                     <Card.Title>{product.itemname}</Card.Title>
-                    <p>{product.itemcost}</p>
                     <Card.Text>
-                    {product.itemdescription}
+                        {product.itemcost}
+                    </Card.Text>
+                    <Card.Text>                        
+                        {product.itemdescription}
+                    </Card.Text>
+                    <Card.Text style={{fontWeight: 'bold', fontSize: 14}}>                        
+                        Version: {product.itemversion}
                     </Card.Text>                  
                 </Card.Body>
             </Card>
