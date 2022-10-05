@@ -1,7 +1,6 @@
 import { Card } from "react-bootstrap";
 
 const ProductCard = ({ product }) => {
-    console.log('ddd', product)
     return (
         <a href={product.VideoLink} target="_blank" rel="noreferrer" className="card-link">
             <Card>
