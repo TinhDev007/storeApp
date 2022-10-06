@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 
 const ProductCard = ({ product }) => {
     return (
@@ -19,7 +19,10 @@ const ProductCard = ({ product }) => {
                         <Card.Text style={{fontWeight: 'bold', fontSize: 14}}>                        
                             Version: {product.SupportedVersion}
                         </Card.Text>                  
-                    )}                    
+                    )}
+                    <div className="card-action">
+                        <Button variant="outline-primary" href="#">Try Now</Button>   
+                    </div>                    
                 </Card.Body>
             </Card>
         </a>        
