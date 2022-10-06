@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
                         {product.Description}
                     </Card.Text>
                     {product.SupportedVersion && (
-                        <Card.Text style={{fontWeight: 'bold', fontSize: 14}}>                        
+                        <Card.Text className="product-version">                        
                             Version: {product.SupportedVersion}
                         </Card.Text>                  
                     )}
